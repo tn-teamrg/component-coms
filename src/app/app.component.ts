@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'component-communcation';
+  title = 'parent app component';
+  childtitle: string = 'child data';
+
+  parentFunction(data: Event){
+    // console.log('--> parentFunction have been invoked');
+    console.log('--> eventData= '+ data);
+
+  }
 }

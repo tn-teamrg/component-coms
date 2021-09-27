@@ -1,2 +1,4 @@
 <h1>parent app component</h1>
-<app-video></app-video>
+<!-- <app-video [title]="childtitle"></app-video> -->
+<!-- <app-video [setData]="childtitle"></app-video> -->
+<app-video [setData]="childtitle" (myEvent)="parentFunction($event)"></app-video>
